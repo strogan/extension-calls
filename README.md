@@ -51,7 +51,7 @@ Single token example
 
 
 # Connect to extension
-Select active user
+Login and then select active user
 
 ```js
 
@@ -65,7 +65,7 @@ await runnableService().get('anatha.current.wallet').call({
 ```
 
 # Get token name
-Returns token name in code format like "BNB"
+Returns token name in code format "BNB"
 ```js
 await runnableService().get('anatha.helper').call({ cmd: 'getToken', token });
 ```
@@ -82,7 +82,7 @@ await runnableService()
           .call({
             cmd: 'send',
             options: rateData.options, // options from Rate Data object
-            addresses: addresses?.map((element) => element?.address), // only address
+            addresses: addresses?.map((element) => element?.address), // from address
             token, // "BNB"
           });
 
