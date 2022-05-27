@@ -57,9 +57,9 @@ Login and then select active user
 
 await runnableService().get('anatha.current.wallet').call({
         cmd: 'init',
-        mnemonic: mnemonic, //user seed
-        activeUserId: user.id,
-        isTestnetMode: isTestnetMode,
+        mnemonic: mnemonic, //user seed 12 words
+        activeUserId: user.id, // unique anatha wallet id "00ace1c8-3228-42e4-a745-910f463e9f02"
+        isTestnetMode: isTestnetMode, // false
       });
 
 ```
