@@ -51,7 +51,7 @@ Single token example
 
 
 # Connect to extension
-Login and then select active user
+Login and then select active user, returns true or false
 
 ```js
 
@@ -73,7 +73,7 @@ await runnableService().get('anatha.helper').call({ cmd: 'getToken', token });
 
 
 # Send transaction
-
+Returns transaction hash
 
 ```js
 
